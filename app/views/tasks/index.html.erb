@@ -1,0 +1,7 @@
+<div class="container">
+  <% @tasks.each do |task| %>
+    <h2><%= task.content %></h2>
+    <p><%= task.created_at %></p>
+    <p><%= task.done %></p>
+  <% end %>
+</div>
