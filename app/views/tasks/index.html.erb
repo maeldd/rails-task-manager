@@ -3,5 +3,8 @@
     <h2><%= task.content %></h2>
     <p><%= task.created_at %></p>
     <p><%= task.done %></p>
+    <%= link_to "Update", task_path(@task),
+      method: :update,
+      data: { confirm: "Are you sure?" } %>
   <% end %>
 </div>
